@@ -1,0 +1,37 @@
+body{
+  background-color:rgb(175, 168, 162)
+}
+  .image {
+    float:inline-end;
+    padding-left: 30%;
+    padding-right: 20%;
+    animation: slideFromBottom 1s ease forwards;
+ 
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start from the bottom */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Slide to the top */
+    }
+  }
+  
+.text-content {
+  max-width: 70%;
+  padding-left: 10%;
+  animation: slideFromRight 1s ease forwards;
+  
+}
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); /* Start from the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Slide to the left */
+  }
+}
